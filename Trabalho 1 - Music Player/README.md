@@ -6,15 +6,15 @@ Uma análise mais precisa feita por você indicou que os codecs de wav, mp2, mp3
 
 Para isso, basta implementar as principais funcionalidades de um music player:
 
-    1. **play** começa a tocar as músicas da lista, na ordem da lista, a partir da música atual, caso já não esteja tocando (não tem efeito caso contrário).
-    2. **stop** interrompe a execução da música atual.
-    3. **add id** acrescenta a música id ao final da lista.
-    4. **del id** retira a primeira ocorrência da música id na lista, se houver e desde que não esteja tocando. Não interrompe a execução da música atual.
-    5. **next id** define que a música id, se presente na lista, será a próxima a ser tocada, desde que não seja a que esteja sendo tocada no momento. A ocorrência de id na lista é realocada para tanto.
-    6. **list** mostra os ids das músicas na lista, separados por vírgula, ou a mensagem "[vazia]" caso a lista esteja vazia.
-    7. **current** mostra o id da música atual (sendo tocada no momento), ou da próxima a ser tocada, caso nenhuma esteja no momento. Se a lista estiver vazia, apresente a mensagem: "Toque! Toque, Dijê!".
-    8. **undo [*]** desfaz os efeitos de uma instrução add, del, next ou play. Isoladamente, desfaz o efeito da última instrução. Havendo o argumento opcional *, desfaz o efeito de todas as instruções dadas até aquele ponto.
-    9. **fight** interrompe o programa para iniciar o ataque ao Império.
+ 1. **play** começa a tocar as músicas da lista, na ordem da lista, a partir da música atual, caso já não esteja tocando (não tem efeito caso contrário).
+ 2. **stop** interrompe a execução da música atual.
+ 3. **add id** acrescenta a música id ao final da lista.
+ 4. **del id** retira a primeira ocorrência da música id na lista, se houver e desde que não esteja tocando. Não interrompe a execução da música atual.
+ 5. **next id** define que a música id, se presente na lista, será a próxima a ser tocada, desde que não seja a que esteja sendo tocada no momento. A ocorrência de id na lista é realocada para tanto.
+ 6. **list** mostra os ids das músicas na lista, separados por vírgula, ou a mensagem "[vazia]" caso a lista esteja vazia.
+ 7. **current** mostra o id da música atual (sendo tocada no momento), ou da próxima a ser tocada, caso nenhuma esteja no momento. Se a lista estiver vazia, apresente a mensagem: "Toque! Toque, Dijê!".
+ 8. **undo [*]** desfaz os efeitos de uma instrução add, del, next ou play. Isoladamente, desfaz o efeito da última instrução. Havendo o argumento opcional *, desfaz o efeito de todas as instruções dadas até aquele ponto.
+ 9. **fight** interrompe o programa para iniciar o ataque ao Império.
 
 A comunicação com o sistema é simples, as funcionalidades são apresentadas como descritas acima e, sempre que uma música termina, o codec responsável por reproduzir a música envia uma mensagem **ended** indicando que a reprodução dela terminou (obviamente, apenas uma música que estava sendo tocada pode terminar). Quando uma música termina, a próxima inicia imediatamente, e não é mais possível desfazer as instruções anteriores. O sistema recomeça a tocar a lista do início caso a última música termine e a batalha não tenha começado. 
 
@@ -43,7 +43,7 @@ For example:
 	list
 	fight
 
-	**Result:**
+	**Result**
 	OyeComoVa
 	OyeComoVa,SambaPaTi
 	Jedi Wagner, assuma o comando!
@@ -58,7 +58,7 @@ For example:
 	current
 	fight
 
-	**Result:**
+	**Result**
 	NaoExisteAmorEmSP
 	Jedi Wagner, assuma o comando!
 
@@ -74,7 +74,7 @@ For example:
 	current
 	fight
 
-	**Result:**
+	**Result**
 	Retrovisor,Brejense,EntaoPraQueOJardim
 	Brejense
 	Brejense
@@ -96,7 +96,7 @@ For example:
 	list
 	fight
 
-	**Result:**
+	**Result**
 	MunRa,NoSleepTillBrooklyn,MalandroEhMalandro,YoungWildFree
 	MunRa,NoSleepTillBrooklyn,MalandroEhMalandro,YoungWildFree
 	NoSleepTillBrooklyn
@@ -114,7 +114,7 @@ For example:
 	list
 	fight
 
-	**Result:**
+	**Result**
 	ApesarDeVoce,Calice,VaiPassar,RodaViva
 	Jedi Wagner, assuma o comando!
 
@@ -128,6 +128,6 @@ For example:
 	list
 	fight
 
-	**Result:**
+	**Result**
 	[vazia]
 	Jedi Wagner, assuma o comando!
