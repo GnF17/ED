@@ -64,7 +64,7 @@ def player(text):
                 playing=''
             funcionality = []
             queue.append(queue.pop())
-        elif command=='undo' or command=='undo *': #nao estah desfazendo a acao
+        elif command=='undo' or command=='undo *':
             if len(funcionality)>0:
                 if caracter=='*':
                     if len(funcionality)<=4:
@@ -78,7 +78,6 @@ def player(text):
                                 queue.append(undo[1])
                             else:
                                 queue = queue[1:position-1]+musica+queue[position+1:]
-                                #usar o metodo de achar a posicao do termo e colocar a musica nessa posicao
                     else:
                         for i in range(4):
                             undo = funcionality.pop(-1)
@@ -90,7 +89,6 @@ def player(text):
                                 queue.append(undo[1])
                             else:
                                 queue = queue[1:position-1]+musica+queue[position+1:]
-                        #funcionality = funcionality[:len(funcionality)-4]
                 else:
                     undo = funcionality.pop(-1)
                     if undo[0]=='play':
@@ -103,13 +101,9 @@ def player(text):
                         queue = queue[1:position-1]+musica+queue[position+1:]
             #print(funcionality)
         (player(input().split())) 
-
-#undo[*]
-
+        
 funcionality = []
 queue = []
 stopped = True
 playing = ''
 player(input().split())
-'''for i in range(5):
-    player(input().split())'''
