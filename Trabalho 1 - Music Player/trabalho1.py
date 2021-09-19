@@ -1,3 +1,5 @@
+#@author: Giovanna Nogueira (GnF17)
+
 def player(text):
     global queue, playing, stopped, funcionality
     caracter = False
