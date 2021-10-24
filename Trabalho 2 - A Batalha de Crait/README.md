@@ -1,4 +1,4 @@
-A Batalha de Crait
+#A Batalha de Crait
 
 Após serem quase que completamente dizimados, os rebeldes - liderados pela general Leia Organa - estão em fuga e sendo perseguidos de perto por cruzadores da Primeira Ordem. A situação está desesperadora, com um número reduzido de naves de transporte, os poucos rebeldes sobreviventes conseguem se abrigar em uma antiga base abandonada, localizada no deserto do distante planeta Crait. Com o cerco da base pelo poderoso Exército da Primeira Ordem, só resta aos rebeldes um pedido desesperado de ajuda aos quatro cantos do universo.
 
@@ -17,8 +17,8 @@ C-3PO teve uma sacada importante,  o código morse pode ser representado por uma
 
 Entrada:
   A entrada consiste em um número inteiro n de símbolos do alfabeto, seguido de n linhas contendo, cada uma, um símbolo do alfabeto e a sua representação correspondente em código morse. Seus valores são separados por um espaço, sendo garantido que não há símbolos do alfabeto repetidos e que 0≤n. A entrada segue, sendo fornecido o número inteiro m, tal que m∈{0,1}, onde o valor 0 define que a mensagem s precisa ser decodificada e o valor 1 que a mensagem s precisa ser codificada. Por fim, a entrada termina com a mensagem s, tal que 1≤len(s).
-  <br>Obs 1:</br> não há garantias de que a relação de n símbolos do alfabeto está completa para permitir codificar ou decodificar a mensagem s.
-  <br>Obs 2:</br> Na mensagem a ser codificada, caso exista mais de um espaço em branco consecutivo, deve-se considerar apenas um espaço e ignorar os demais.
+  **Obs 1:** não há garantias de que a relação de n símbolos do alfabeto está completa para permitir codificar ou decodificar a mensagem s.
+  **Obs 2:** Na mensagem a ser codificada, caso exista mais de um espaço em branco consecutivo, deve-se considerar apenas um espaço e ignorar os demais.
 
 Saída:
   A saída consiste da mensagem s codificada ou decodificada (de acordo com a entrada), seguido, na próxima linha,  da impressão da árvore de decisão. A impressão da árvore de decisão consiste na impressão dos valores dos seus nós, seguindo o percurso em largura (por nível) e separados por espaço em branco. Para o nó que não possua um símbolo do alfabeto associado, o símbolo "*" (sem aspas) deve ser impresso em seu lugar. 
@@ -28,8 +28,8 @@ Observações:
   - Caso a mensagem s não possa ser decodificada, a seguinte mensagem deve ser exibida: Impossível decodificar a mensagem!
   - A árvore de decisão deve ser sempre impressa, caso seja possível.
   
-<br>For example:
-Input:</br>
+**For example:
+Input:**
 5
 A .
 C -
@@ -39,12 +39,12 @@ T ..
 0
 . .. . - . .- -. 
 
-<br>Result:</br>
+**Result:**
 ATACAR!
 * A C T R !
 
 
-<br>Input:</br>
+**Input:**
 10
 A .
 B -.
@@ -59,12 +59,12 @@ T -
 0
 . - . .- . .. /.. -- -. -- .-- ... -- -.- --- 
 	
-<br>Result:</br>
+**Result:**
 ATACAR REBELDES!
 * A T R C B E D L S !
 
 
-<br>Input:</br>
+**Input:**
 5
 A .
 C -
@@ -74,12 +74,12 @@ T ..
 1
 ATACAR!
 
-<br>Result:</br>
+**Result:**
 . .. . - . .- -. 
 * A C T R !
 
 
-<br>Input:</br>
+**Input:**
 10
 A .
 B -.
@@ -94,6 +94,6 @@ T -
 1
 ATACAR REBELDES!
 
-<br>Result:</br>
+**Result:**
 . - . .- . .. /.. -- -. -- .-- ... -- -.- --- 
 * A T R C B E D L S !
