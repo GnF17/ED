@@ -1,4 +1,4 @@
-#A Batalha de Crait
+# A Batalha de Crait
 
 Após serem quase que completamente dizimados, os rebeldes - liderados pela general Leia Organa - estão em fuga e sendo perseguidos de perto por cruzadores da Primeira Ordem. A situação está desesperadora, com um número reduzido de naves de transporte, os poucos rebeldes sobreviventes conseguem se abrigar em uma antiga base abandonada, localizada no deserto do distante planeta Crait. Com o cerco da base pelo poderoso Exército da Primeira Ordem, só resta aos rebeldes um pedido desesperado de ajuda aos quatro cantos do universo.
 
@@ -30,70 +30,70 @@ Observações:
   
 **For example:
 Input:**
-5
-A .
-C -
-R .-
-T ..
-! -.
-0
+5 <br>
+A . <br>
+C - <br>
+R .- <br>
+T .. <br>
+! -. <br>
+0 <br>
 . .. . - . .- -. 
 
 **Result:**
 ATACAR!
-* A C T R !
+* A C T R ! <br>
 
 
 **Input:**
-10
-A .
-B -.
-C .-
-D ...
-E --
-L .--
-R ..
-S -.-
-T -
-! ---
-0
+10 <br>
+A . <br>
+B -. <br>
+C .- <br>
+D ... <br>
+E -- <br>
+L .-- <br>
+R .. <br>
+S -.- <br>
+T - <br>
+! --- <br>
+0 <br>
 . - . .- . .. /.. -- -. -- .-- ... -- -.- --- 
 	
 **Result:**
 ATACAR REBELDES!
-* A T R C B E D L S !
+* A T R C B E D L S ! <br>
 
 
 **Input:**
-5
-A .
-C -
-R .-
-T ..
-! -.
-1
+5 <br>
+A . <br>
+C - <br>
+R .- <br>
+T .. <br>
+! -. <br>
+1 <br>
 ATACAR!
 
 **Result:**
 . .. . - . .- -. 
-* A C T R !
+* A C T R ! <br>
 
 
 **Input:**
-10
-A .
-B -.
-C .-
-D ...
-E --
-L .--
-R ..
-S -.-
-T -
-! ---
-1
+10 <br>
+A . <br>
+B -. <br>
+C .- <br>
+D ... <br>
+E -- <br>
+L .-- <br>
+R .. <br>
+S -.- <br>
+T - <br>
+! --- <br>
+1 <br>
 ATACAR REBELDES!
 
 **Result:**
 . - . .- . .. /.. -- -. -- .-- ... -- -.- --- 
-* A T R C B E D L S !
+* A T R C B E D L S ! <br>
