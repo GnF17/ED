@@ -1,4 +1,4 @@
-#Falta arrumar a parte de imprimir os caminhos percorridos pela arvore
+#author: Giovanna Nogueira
 
 class tree:
   def __init__(self,rt, e = None, d = None):
@@ -15,7 +15,8 @@ def criar(dic, arvore):
       if arvore.esq==None:
         arvore.esq=tree('*')
       criar([dic[0],dic[1][1:]],arvore.esq)
-    else:
+    
+    if dic[1][0]=='-':
       if arvore.dir==None:
         arvore.dir=tree('*')
       criar([dic[0],dic[1][1:]],arvore.dir)
@@ -69,7 +70,8 @@ while len(mensagem)>0:
       if mensagem[0]!=' ':
         finalMessage += dic[mensagem[0]]+' '
       else:
-        finalMessage += '/'
+        if mensagem[1]!=' ':
+          finalMessage += '/'
     except:
       print('Impossível codificar a mensagem!')
       finalMessage = ''
@@ -105,23 +107,10 @@ def mostrar(a, i):
 
   barra += '__'
   if a != None:
-    mostrar(a.dir, i)
     mostrar(a.esq, i)
+    mostrar(a.dir, i)
   barra = barra[:len(barra)-2]
 
 if error:
-  for i in range(int(altura)):
+  for i in range(int(altura)+1):
     mostrar(arvore, i)
-      break
-  else:
-    try:
-      if mensagem[0]!=' ':
-        finalMessage += dic[mensagem[0]]+' '
-      else:
-        finalMessage += '/'
-    except:
-      print('Impossível codificar a mensagem!')
-      break
-  mensagem.pop(0)
-
-print(finalMessage.strip())
